@@ -1,0 +1,83 @@
+$primary-color: #0a2351;
+$hover-color: #071a3d;
+$bg-color: #faf0f6;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  input,
+  textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .blog-button {
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    font-size: 1rem;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+.blog-list {
+  .post {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #fafafa;
+  }
+  .post-title {
+    margin-top: 0;
+  }
+  .post-content {
+    margin-bottom: 0.5rem;
+  }
+  .post-delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+.no-posts {
+  color: gray;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
