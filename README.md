@@ -1,6 +1,7 @@
 # Curated Reads
 
 ![Demo](demo.gif)
+
 A modern web application for creating and managing curated content with plans to implement premium features and newsletter functionality.
 
 ## 🚀 Current Features
